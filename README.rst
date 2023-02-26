@@ -1,6 +1,4 @@
-===
 # KIDX
-===
 
 Khalti flavored IDX field for django.
 
