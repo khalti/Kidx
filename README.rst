@@ -16,7 +16,7 @@ Quick start
 
 2. Include the kidx field in your models like this::
 
-    from kidx import KIDXField
+    from kidx.fields import KIDXField
 
     class MyModel(models.Model):
         ...
@@ -24,7 +24,7 @@ Quick start
 
 3. Create a Class for model prefixes like this::
 
-    from kidx import KIDXPrefixes
+    from kidx.prefixes import KIDXPrefixes
 
     class MyPrefix(KIDXPrefixes):
         myapp_mymodel = 'MY'
