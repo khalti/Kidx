@@ -1,5 +1,5 @@
 ===
-KIDX
+# KIDX
 ===
 
 Khalti flavored IDX field for django.
@@ -22,14 +22,15 @@ Quick start
         ...
         kidx = KIDXField()
 
-3. Create a Class for model prefixes like this:
+3. Create a Class for model prefixes like this::
 
     from kidx import KIDXPrefixes
 
     class MyPrefix(KIDXPrefixes):
-        {db_table} = {prefix}
-
-    # Example
-
-    class MyPrefix(KIDXPrefixes):
         myapp_mymodel = 'MY'
+
+4. Update setting to use your prefix class::
+
+    KIDX_PREFIX_CLASS = 'appName.moduleName.className'
+
+5. Create migration and migrate.
